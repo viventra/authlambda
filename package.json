@@ -1,0 +1,47 @@
+{
+  "name": "authlambda",
+  "version": "1.0.0",
+  "description": "This is a blank project for C# development with CDK.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc -b",
+    "webpack": "webpack --progress",
+    "analyze": "webpack --profile --json > stats.json && webpack-bundle-analyzer ./stats.json",
+    "build": "npm run tsc && npm run webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/adm-zip": "^0.4.33",
+    "@types/aws-lambda": "^8.10.61",
+    "@types/cookie": "^0.4.0",
+    "@types/fs-extra": "^9.0.1",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/ncp": "^2.0.4",
+    "@types/node": "^14.6.0",
+    "html-loader": "^1.2.1",
+    "prettier": "^2.1.2",
+    "terser-webpack-plugin": "^4.1.0",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^5.2.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.16",
+    "aws-sdk": "^2.737.0",
+    "axios": "^0.21.1",
+    "cookie": "^0.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^1.9.0",
+    "ncp": "^2.0.0",
+    "s3-spa-upload": "^1.1.6"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2
+  }
+}
