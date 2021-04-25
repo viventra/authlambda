@@ -14,7 +14,7 @@ namespace Authlambda
 
     public class AuthlambdaStack : Stack
     {
-        const string cloudfrontOAIName = "E318EOOP7Y2H1E";
+        const string cloudfrontOAIName = "<REPLACE WITH YOUR CLOUDFRONT OAI NAME>";
 
         AuthlambdaFunctionsStack functionsStack;
         internal AuthlambdaStack(Construct scope, string id, AuthlambdaStackProps props = null) : base(scope, id, props)
